@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: crypto-bot-multi
+    env: python
+    repo: https://github.com/你的帳號名/crypto-bot-multi
+    branch: master
+    startCommand: bash start.sh
+    envVars:
+      - key: BINANCE_API_KEY
+        value: 你的API金鑰
+      - key: BINANCE_API_SECRET
+        value: 你的密鑰
